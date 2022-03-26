@@ -1,0 +1,97 @@
+$body-bg: #000;
+$body-color: #111;
+$input-color: #FFFFFF;
+@import "../node_modules/bootstrap/scss/bootstrap";
+$input-btn-focus-color: #FFFFFF;
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+div{
+    color: #FFFFFF;
+    text-align: center;
+}
+hr{
+  color:#5C2AEB;
+  background: #5C2AEB;
+  border-width: 2em;
+}
+.tcolor{
+    color: #5C2AEB;
+    text-decoration: none;
+}
+.inputContainer i {
+   position: absolute;
+   left: 550px;
+}
+.inputContainer {
+   width: 100%;
+   margin-bottom: 10px;
+}
+.icon {
+   padding: 15px;
+   color: #FFF;
+   width: 70px;
+   text-align: left;
+   float: left;
+}
+.form-control {
+  position: relative;
+  margin: 20px 0;
+  width: 600px;
+}
+
+.form-control input {
+  border: 0;
+  border-bottom: 2px solid #333;
+  padding: 15px 0;
+  padding-left: 10px;
+  display: block;
+  font-size: 14px;
+  width: 100%;
+  border-bottom-color: white;
+  transition: 0.1s ease-in;
+}
+
+.form-control input:focus, 
+.form-control input:valid {
+  border-bottom-color: #5C2AEB;
+  outline: none;
+}
+
+.form-control input:focus + label span ,
+.form-control input:valid + label span{
+  color: #5C2AEB;
+  transform: translateY(-30px);
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  margin-left: 15px;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 16px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.registerimg{
+  min-height: 100vh;
+}
+
+.bg-image{
+  // background-image: url('../assets/register_image.jpg');
+  background-size: cover;
+}

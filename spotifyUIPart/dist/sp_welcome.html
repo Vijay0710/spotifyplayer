@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="/sp_welcome.7e797208.css">
+    <!-- Boxicons CDN Link -->
+
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container-fluid ms-3 home-section">
+        <div class="sidebar">
+            <div class="logo-details">
+                <div class="p-0 justify-content-start">
+                    <img src="/Spotify.cd8a431d.svg" style="width: 48px; height: 48px;" class="icon">
+                </div>
+                <div class="logo_name">Spotify</div>
+                <i class="bx bx-menu" id="btn"></i>
+            </div>
+            <ul class="custom-nav-list p-0">
+                <li>
+                    <i class="bx bx-search"></i>
+                    <input type="text" placeholder="Search...">
+                    <span class="tooltip">Search</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-album"></i>
+                        <span class="links_name">Albums</span>
+                    </a>
+                    <span class="tooltip">Albums</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-radio"></i>
+                        <span class="links_name">Podcasts</span>
+                    </a>
+                    <span class="tooltip">Podcasts</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-video"></i>
+                        <span class="links_name">Discover</span>
+                    </a>
+                    <span class="tooltip">Discover</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-heart"></i>
+                        <span class="links_name">Saved</span>
+                    </a>
+                    <span class="tooltip">Saved</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-plus"></i>
+                        <span class="links_name">Playlist</span>
+                    </a>
+                    <span class="tooltip">Playlist</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-cog"></i>
+                        <span class="links_name">Settings</span>
+                    </a>
+                    <span class="tooltip">Settings</span>
+                </li>
+                <li class="profile">
+                    <div class="profile-details">
+                        <img src="/My%20photo.376e23e1.jpg" style="border-radius: 30%; border: 2px solid #FFF;" alt="profileImg">
+                        <div class="name_job">
+                            <div class="name">Vijay</div>
+                            <div class="job">Android App Developer</div>
+                        </div>
+                    </div>
+                    <i class="bx bx-log-out" id="log_out"></i>
+                </li>
+            </ul>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active img-fluid">
+                    <img src="/carousel_image.607cc121.png" class="d-block w-100 img-fluid" style="height:300px; width: 100%; object-fit: cover;" alt="...">
+                    <div class="row">
+                        <div class="carousel-caption col-sm-3" style="top: 20%; right: 0;">
+                            <h5 style="color: #5C2AEB; background: #FFF; border-radius: 6px; width: 10rem; border: 2px solid #5C2AEB;" class="p-2 badge text-wrap d-flex justify-content-start">FEATURED OF THE YEAR</h5>
+                            <h4 class="d-flex justify-content-start">Love Me Like You Do</h4>
+                            <h6 class="d-flex justify-content-start" style="font-size: 15px; opacity: 0.7;">Ellie
+                                Goudling ft. Rihanna</h6>
+                            <div class="d-flex justify-content-start">
+                                <button type="button" id="button_play" style="background: #FFF; border-radius: 10px; width: 49px; height: 48px; border: 2px solid #5C2AEB;" class="btn" onclick="buttonPlayPress()">
+                                    <i class="bi bi-play-fill" style="color: #5C2AEB; font-size: 20px;"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item img-fluid">
+                    <img src="/guitar_carousel.a2a9e6f2.jpg" class="d-block w-100 img-fluid" style="height:300px; width: 100%; object-fit: cover;" alt="...">
+                </div>
+                <div class="carousel-item img-fluid">
+                    <img src="/stylemusic_carousel.a8cfc437.jpg" class="d-block w-100 img-fluid" style="height:300px; width: 100%; object-fit: cover;" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div id="songPanel" style="overflow: auto; height: 200vh;" class="overflow-auto">
+            <div style="color: white; font-size: 20px;" class="pt-2">Trending now</div>
+            <div class="row pv-5">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 ps-0 mt-2 d-flex justify-content-center">
+                    <div class="card" style="width: 13rem; background: #2C272E;">
+                        <div class="card-body">
+                            <img src="/blinding_lights.b7bea5d0.jpg" alt="" style="object-fit: cover; width: 100%; height: auto">
+                            <h6 class="card-title ps-2 pt-2" style="color: #FFF;">Blinding Lights</h6>
+                            <p class="card-text ps-2 pt-" style="color: #FFF;">The Weeknd</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 d-flex justify-content-center">
+                    <div class="card" style="width: 13rem; height: auto; background: #2C272E;">
+                        <div class="card-body">
+                            <img src="/sofarawaya.179f3b58.png" alt="" style="object-fit: cover; width: 100%; height: 75%">
+                            <h6 class="card-title ps-2 pt-2" style="color: #FFF;">Blinding Lights</h6>
+                            <p class="card-text ps-2 pt-" style="color: #FFF;">The Weeknd</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 d-flex justify-content-center">
+                    <div class="card" style="width: 13rem; height: auto; background: #2C272E;">
+                        <div class="card-body">
+                            <img src="/cardigan.56f6e3b7.jpg" alt="" style="object-fit: cover; width: 100%; height: 75%">
+                            <h6 class="card-title ps-2 pt-2" style="color: #FFF;">Blinding Lights</h6>
+                            <p class="card-text ps-2 pt-" style="color: #FFF;">The Weeknd</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 d-flex justify-content-center">
+                    <div class="card" style="width: 13rem; height: auto; background: #2C272E;">
+                        <div class="card-body">
+                            <img src="/willow.98e009a1.jpg" alt="" style="object-fit: cover; width: 100%; height: 75%">
+                            <h6 class="card-title ps-2 pt-2" style="color: #FFF;">Blinding Lights</h6>
+                            <p class="card-text ps-2 pt-" style="color: #FFF;">The Weeknd</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 d-flex justify-content-center">
+                    <div class="card" style="width: 13rem; height: auto; background: #2C272E;">
+                        <div class="card-body">
+                            <img src="/girlslikeyou.5a6140fa.jpg" alt="" style="object-fit: cover; width: 100%; height: 75%">
+                            <h6 class="card-title ps-2 pt-2" style="color: #FFF;">Blinding Lights</h6>
+                            <p class="card-text ps-2 pt-" style="color: #FFF;">The Weeknd</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 d-flex justify-content-center">
+                    <div class="card" style="width: 13rem; height: auto; background: #2C272E;">
+                        <div class="card-body" style="object-fit: cover;">
+                            <img src="/girlslikeyou.5a6140fa.jpg" alt="" style="object-fit: cover; width: 100%; height: 75%">
+                            <h6 class="card-title ps-2 pt-2" style="color: #FFF;">Blinding Lights</h6>
+                            <p class="card-text ps-2 pt-" style="color: #FFF;">The Weeknd</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 ps-0 mt-2 d-flex justify-content-center">
+                    <div class="card" style="width: 13rem; height: auto; background: #2C272E;">
+                        <div class="card-body" style="object-fit: cover;">
+                            <img src="/girlslikeyou.5a6140fa.jpg" alt="" style="object-fit: cover; width: 100%; height: 75%">
+                            <h6 class="card-title ps-2 pt-2" style="color: #FFF;">Blinding Lights</h6>
+                            <p class="card-text ps-2 pt-" style="color: #FFF;">The Weeknd</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 d-flex justify-content-center">
+                    <div class="card" style="width: 13rem; height: auto; background: #2C272E;">
+                        <div class="card-body" style="object-fit: cover;">
+                            <img src="/girlslikeyou.5a6140fa.jpg" alt="" style="object-fit: cover; width: 100%; height: 75%">
+                            <h6 class="card-title ps-2 pt-2" style="color: #FFF;">Blinding Lights</h6>
+                            <p class="card-text ps-2 pt-" style="color: #FFF;">The Weeknd</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container">
+        <div style="background: #262424; position: fixed; bottom: 0; left: 0; width: 100%; z-index: 1000;" class="">
+            footer ms-4 mt-2 fixed-bottom -->
+            <!-- <div class="p-3">
+                <img src="../assets/wolves.jpg" width="100px" height="100px" alt=""
+                    style="border-radius: 6px; border: 2px solid #FFF;">
+            </div>
+
+        </div>
+    </div>  -->
+    <script>let sidebar = document.querySelector(".sidebar");
+let closeBtn = document.querySelector("#btn");
+let searchBtn = document.querySelector(".bx-search");
+closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+});
+searchBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+});
+// following are the code to change sidebar button(optional)
+function menuBtnChange() {
+    if (sidebar.classList.contains("open")) closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+    else closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+}
+var state = 'stop';
+function buttonPlayPress() {
+    if (state == 'stop') {
+        state = 'play';
+        var button = d3.select("#button_play").classed('', true);
+        button.select("i").attr('class', "bi bi-pause-fill");
+    } else if (state == 'play' || state == 'resume') {
+        state = 'pause';
+        d3.select("#button_play i").attr('class', "bi bi-play-fill");
+    } else if (state == 'pause') {
+        state = 'resume';
+        d3.select("#button_play i").attr('class', "bi bi-pause-fill");
+    }
+    console.log("button play pressed, play was " + state);
+} // function buttonStopPress() {
+ //     state = 'stop';
+ //     var button = d3.select("#button_play").classed('', false);
+ //     button.select("i").attr('class', "bi bi-play-fill");
+ //     console.log("button stop invoked.");
+ // }
+
+</script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="/sp_welcome.379dd93c.js" defer=""></script>
+</body>
+
+</html>
